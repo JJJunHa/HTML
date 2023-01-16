@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>호텔객실예약관리 -객실관리</title>
+</head>
+<style>
+input{
+    width: 100px;
+    height: 20px;
+
+}
+button
+{
+    width: 100px;
+    height: 30px;
+    font-weight: bolder;
+    font-size: 1.7ch;
+}
+</style>
+<body style="background-color: rgb(11, 12, 11); color: aliceblue;">
+    <table align="center">
+        <tr>
+            <td style="width: 33%;"><a href='type.html'>객실타입관리</a>&nbsp;객실관리&nbsp;<a href="book.html">예약관리</a></td>
+            <td style="width: 33%;"><h1 style="text-align: center; font-size: 50px; ">호텔객실예약관리</h1></td>
+            <td align="right" valign="top">Created by 김준하<br>
+                @CopRight free</td>
+            <tr><tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr></tr></tr>
+        </tr>
+    </table>
+   
+
+    <table style="height: 600px;" align="center">
+        <tc>
+        <tr valign="top">
+            <td rowspan="6"><tc colspan="3">
+                <select size="20" style="width: 240px; font-size: 2ch;">
+                <option value="Suite Room">백두산 Suite Room</option><br>
+                <option value="Family Room">한라산 Family Room</option<br>
+                <option value=">Deluxe Room">광덕산 Deluxe Room</option><br>
+                <option value="Single Room">태조산 Single Room</option><br>
+                <option value="Double Room">봉서산 Double Room</option><br>
+                </select>
+            </tc>
+            </td>
+        </tc>
+        <tc >
+            <td style="font-size: 2ch; font-weight: bolder;">
+                &nbsp;&nbsp;객실번호&nbsp;&nbsp;<input type=text id="name" name="name" readonly style="width: 120px;">
+            </td>
+                <tr valign="top">
+                    <td style="font-size: 2ch; font-weight: bolder;">
+                        &nbsp;&nbsp;객실명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type=text id="name" name="name" readonly style="width: 120px;">
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td style="font-size: 2ch; font-weight: bolder;">
+                        &nbsp;&nbsp;객실타입&nbsp;&nbsp;<select style="width: 130px; height: 30px;">
+                            <option value="Suite Room">Suite Room</option><br>
+                            <option value="Family Room">Family Room</option<br>
+                            <option value=">Deluxe Room">Deluxe Room</option><br>
+                            <option value="Single Room">Single Room</option><br>
+                            <option value="Double Room">Double Room</option><br>
+                            </select><br>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td style="font-size: 2ch; font-weight: bolder;">
+                        &nbsp;&nbsp;숙박인원&nbsp;&nbsp;<input type=text id="name" name="name" readonly style="width: 120px;">명
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <td style="font-size: 2ch; font-weight: bolder;">
+                        &nbsp;&nbsp;1박요금&nbsp;&nbsp;&nbsp;<input type=text id="name" name="name" readonly style="width: 120px;">원
+                    </td>
+                </tr>
+
+                <tr align="center" valign="top">
+                    <td colspan="3">
+                        <button id="btnS">추가</button>&nbsp;
+                        <button id="btnR">삭제</button>&nbsp;
+                        <button id="btnR">비우기</button></td>&nbsp;
+                </tr>
+                
+           
+        </tc> 
+           
+
+                
+            
+        </tr>
+    </table>
+    
+</body>
+</html>
