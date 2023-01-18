@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let ob={'name':'홍길동','age':25,'mobile' :'44445555','city':'천안시 동남구'};
+        // let key1='name';
+        // // document.write(ob.name+'<br>');
+        // // document.write(ob['mobile']+'<br>');
+        // // document.write(ob['홍길동']+'<br>');
+        // ar = {'name':{'name':'John','gender':'Make'},
+        //       'name1':{'name':'Jane','gender':'Female'},
+        //       'name2':{'name':'Johanson','age':30, 'mobile':'000000'}};
+        // document.write(ar['name']['name']);
+        // document.write('<br>');
+
+        // let arMenu=[];
+        // let name=prompt("메뉴명을 입력하시오 ['':종료]");
+        // while(name!=''){
+        //     let price=prompt("가격을 입력하시오. ['':종료]");
+        //     let ob={'name':name,'price':parseInt(price)};
+        //     arMenu.push(ob);
+        //     name=prompt("메뉴명을 입력하시오['':종료]");
+        // }
+        // for(let i=0; i<arMenu.length; i++){
+        //     let ob = arMenu[i];
+        //     document.write(ob['name']+','+ob['price']+'원<br>');
+        // }
+        let student=[];
+        let i=0;
+        let sumE=0;
+        let sumK=0;
+        let sumM=0;
+        while(true){
+            let english=prompt("영어점수를 입력하시오 ['':종료]");
+                if(english=='')break;
+            english=parseInt(english);
+            let korea=prompt("국어점수를 입력하시오 ['':종료]");
+                if(korea=='')break;
+            korea=parseInt(korea);
+            let math=prompt("수학점수를 입력하시오 ['':종료]");
+                if(math=='')break;
+            math=parseInt(math);
+            let ob={'eng':english,'kor':korea,'math':math}
+            student.push(ob);
+            sumE+=student[i]['eng'];
+            document.write('영어점수 : '+student[i]['eng']);
+            sumK+=student[i]['kor'];
+            document.write(' 국어점수 : '+student[i]['kor']);
+            sumM+=student[i]['math'];
+            document.write(' 수학점수 : '+student[i]['math']+'<br>');
+            i++
+        }
+        document.write('영어점수 총합 : '+sumE+' 국어 점수 총합 : '+sumK+' 수학 점수 총합 : '+sumM+'<br>');
+        document.write('영어점수 평균 : '+(sumE/student.length)+' 국어 점수 평균 : '+(sumK/student.length)+' 수학 점수 평균 : '+(sumM/student.length));
+        
+    </script>
+</body>
+</html>
